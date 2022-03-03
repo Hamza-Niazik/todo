@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d74755952db2e76792aad09d1718605d",
+    "content-hash": "de0098c6534ccf7a5ff90b5fc308e83c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -109,6 +109,18 @@
                 "source": "https://github.com/Chi-teck/drupal-code-generator/tree/1.33.1"
             },
             "time": "2020-12-05T05:59:11+00:00"
+        },
+        {
+            "name": "ckeditor/find",
+            "version": "4.14.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/find/releases/find_4.14.1.zip"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "ckeditor/plugins/find"
+            }
         },
         {
             "name": "composer/installers",
@@ -1906,6 +1918,213 @@
             }
         },
         {
+            "name": "drupal/anchor_link",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/anchor_link.git",
+                "reference": "8.x-2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "849e94b2687ffc1f7984604fda929d7201933757"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/fakeobjects": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.5",
+                    "datestamp": "1612887940",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vardot",
+                    "homepage": "https://www.drupal.org/vardot",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Rajab Natshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                }
+            ],
+            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8.",
+            "homepage": "https://www.drupal.org/project/anchor_link",
+            "support": {
+                "source": "http://cgit.drupalcode.org/anchor_link",
+                "issues": "https://www.drupal.org/project/issues/anchor_link"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_codemirror",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_codemirror.git",
+                "reference": "8.x-2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_codemirror-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "dfb00a0ec44953846d689d1e72f40e4201c8a355"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.3",
+                    "datestamp": "1586020798",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Nickolay Leshchev (Plazik)",
+                    "homepage": "https://www.drupal.org/u/plazik",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Christopher C. Wells (wells)",
+                    "homepage": "https://www.drupal.org/u/wells",
+                    "role": "Co-maintainer"
+                }
+            ],
+            "description": "Adds the CKEditor CodeMirror source syntax highlighter plugin.",
+            "homepage": "https://drupal.org/project/ckeditor_codemirror",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_codemirror",
+                "issues": "https://www.drupal.org/project/issues/ckeditor_codemirror?version=8.x"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_config",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_config.git",
+                "reference": "8.x-3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_config-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "5fc38932662e3d5804e3f5f6dd0fe8d6a157e76d"
+            },
+            "require": {
+                "drupal/core": "^8.5|^9.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.1",
+                    "datestamp": "1632975600",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Burge",
+                    "homepage": "https://www.drupal.org/u/chris-burge",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Martin Klíma (martin_klima)",
+                    "homepage": "https://www.drupal.org/u/martin_klima",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Extends core CKEditor to support custom configuration.",
+            "homepage": "https://www.drupal.org/project/ckeditor_config",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_config",
+                "issues": "https://www.drupal.org/project/issues/ckeditor_config"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_find",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_find.git",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_find-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "57e0308ad5c5e344cfa9786fa6cdf09bba489d22"
+            },
+            "require": {
+                "ckeditor/find": "^4",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1639070935",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Hansen (dhansen)",
+                    "homepage": "https://www.drupal.org/u/dhansen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "kwfinken",
+                    "homepage": "https://www.drupal.org/user/2514950"
+                }
+            ],
+            "description": "This plugin module adds the find and replace dialog to CKEditor in Drupal 8",
+            "homepage": "https://drupal.org/project/ckeditor_find",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_find",
+                "issues": "https://drupal.org/project/issues/ckeditor_find"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "9.3.0",
             "source": {
@@ -2409,6 +2628,59 @@
             }
         },
         {
+            "name": "drupal/fakeobjects",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fakeobjects.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fakeobjects-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "0a7a3ead609d1efd62f4f4803a41317970d8292d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1592829875",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                }
+            ],
+            "description": "Adds the FakeObjects plugin to CKEditor. This plugin is a utility plugin that is required by certain user-facing CKEditor plugins.",
+            "homepage": "http://drupal.org/project/fakeobjects",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fakeobjects",
+                "issues": "http://drupal.org/project/issues/fakeobjects"
+            }
+        },
+        {
             "name": "drupal/jsonapi_extras",
             "version": "3.20.0",
             "source": {
@@ -2537,6 +2809,55 @@
             }
         },
         {
+            "name": "drupal/module_filter",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/module_filter.git",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/module_filter-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "b5c1a5141da392340232a1ad0934b921b862e1f4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1614918371",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "andrey.troeglazov",
+                    "homepage": "https://www.drupal.org/user/3145389"
+                },
+                {
+                    "name": "greenSkin",
+                    "homepage": "https://www.drupal.org/user/173855"
+                }
+            ],
+            "description": "Filter the modules list.",
+            "homepage": "http://drupal.org/project/module_filter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/module_filter",
+                "issues": "https://www.drupal.org/project/issues/module_filter"
+            }
+        },
+        {
             "name": "drupal/scheduler",
             "version": "1.4.0",
             "source": {
@@ -2662,6 +2983,58 @@
             "homepage": "https://www.drupal.org/project/scheduler_content_moderation_integration",
             "support": {
                 "source": "https://git.drupalcode.org/project/scheduler_content_moderation_integration"
+            }
+        },
+        {
+            "name": "drupal/simple_popup_blocks",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_popup_blocks.git",
+                "reference": "8.x-2.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_popup_blocks-8.x-2.8.zip",
+                "reference": "8.x-2.8",
+                "shasum": "b40b14fe4226327a933d3672d08f434136e27a3b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.8",
+                    "datestamp": "1622660240",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ameer Khan",
+                    "homepage": "https://www.drupal.org/user/3087149"
+                },
+                {
+                    "name": "mattbloomfield",
+                    "homepage": "https://www.drupal.org/user/3620586"
+                },
+                {
+                    "name": "vengatjove",
+                    "homepage": "https://www.drupal.org/user/3555715"
+                }
+            ],
+            "description": "Enable Simple popup blocks to show any block contents, forms or custom div in popup. Now Drupal 8/9 compatible. Originally created by Ameer Khan. This is a stable release of the 2.0 version.",
+            "homepage": "https://www.drupal.org/project/simple_popup_blocks",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_popup_blocks"
             }
         },
         {
@@ -7679,6 +8052,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "drupal/ckeditor_find": 10,
         "drupal/libraries": 10,
         "drupal/static_suite": 15,
         "drupal/webform": 10
