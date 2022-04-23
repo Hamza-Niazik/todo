@@ -43,6 +43,7 @@
     "drupal/jsonapi_extras": "^3.19",
     "drupal/libraries": "^3.0@beta",
     "drupal/module_filter": "^3.2",
+    "drupal/nodeviewcount": "^1.0@alpha",
     "drupal/outdatedbrowser": "^1.0@beta",
     "drupal/redirect": "^1.7",
     "drupal/scheduler_content_moderation_integration": "^1.3",

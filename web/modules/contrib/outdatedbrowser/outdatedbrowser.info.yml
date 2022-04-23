@@ -1,0 +1,10 @@
+name: Outdated Browser
+type: module
+description: A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.
+core_version_requirement: ^8 || ^9
+
+configure: outdatedbrowser.admin_settings
+# Information added by Drupal.org packaging script on 2021-05-27
+version: '8.x-1.0-beta3'
+project: 'outdatedbrowser'
+datestamp: 1622099807
