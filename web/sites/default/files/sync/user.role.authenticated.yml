@@ -1,17 +1,58 @@
-uuid: 500850ae-9205-4648-8062-bfbfabbb3b54
+uuid: 6e06ac92-3249-48a2-b26f-c1df85b69680
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.book
+    - node.type.page
+    - node.type.webform
+    - taxonomy.vocabulary.tags
+    - workflows.workflow.editorial
   module:
+    - admin_toolbar_search
+    - block
+    - block_content
+    - book
     - comment
+    - config
     - contact
+    - content_moderation
+    - contextual
+    - devel
+    - devel_generate
+    - entity_browser
+    - field_ui
+    - file
     - filter
+    - image
     - media
+    - message
+    - node
+    - path
+    - private_message
+    - redirect
+    - rest
     - search
     - shortcut
+    - simple_popup_blocks
     - system
+    - taxonomy
+    - toolbar
+    - tour
+    - views_ui
+    - webform
+    - webform_node
+    - webform_submission_log
+    - webform_templates
+    - workflows
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
@@ -19,12 +60,200 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access administration pages'
+  - 'access any webform configuration'
   - 'access comments'
   - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access devel information'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access media_entity_browser entity browser pages'
+  - 'access media_entity_browser_media_library entity browser pages'
+  - 'access media_entity_browser_modal entity browser pages'
+  - 'access own webform configuration'
+  - 'access printer-friendly version'
   - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access site reports'
   - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'access webform submission user'
+  - 'add content to books'
+  - 'administer account settings'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer book outlines'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer contact_message form display'
+  - 'administer content types'
+  - 'administer devel_generate'
+  - 'administer display modes'
+  - 'administer entity browsers'
+  - 'administer filters'
+  - 'administer image styles'
+  - 'administer media display'
+  - 'administer media fields'
+  - 'administer media form display'
+  - 'administer menu'
+  - 'administer message display'
+  - 'administer message fields'
+  - 'administer message form display'
+  - 'administer message templates'
+  - 'administer messages'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer permissions'
+  - 'administer private message module'
+  - 'administer private messages'
+  - 'administer private_message display'
+  - 'administer private_message fields'
+  - 'administer private_message form display'
+  - 'administer private_message_thread display'
+  - 'administer private_message_thread fields'
+  - 'administer private_message_thread form display'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer rest resources'
+  - 'administer search'
+  - 'administer shortcuts'
+  - 'administer simple_popup_blocks'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'administer views'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'administer webform templates'
+  - 'administer workflows'
+  - 'bypass node access'
+  - 'cancel account'
+  - 'change own username'
+  - 'create article content'
+  - 'create audio media'
+  - 'create book content'
+  - 'create document media'
+  - 'create new books'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create webform'
+  - 'create webform content'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any article content'
+  - 'delete any audio media'
+  - 'delete any book content'
+  - 'delete any page content'
+  - 'delete any webform'
+  - 'delete any webform content'
+  - 'delete any webform submission'
+  - 'delete article revisions'
+  - 'delete book revisions'
+  - 'delete own article content'
+  - 'delete own book content'
+  - 'delete own page content'
+  - 'delete own webform'
+  - 'delete own webform content'
+  - 'delete own webform submission'
+  - 'delete page revisions'
+  - 'delete private message thread for all'
+  - 'delete terms in tags'
+  - 'delete webform revisions'
+  - 'delete webform submissions any node'
+  - 'delete webform submissions own node'
+  - 'edit any article content'
+  - 'edit any book content'
+  - 'edit any page content'
+  - 'edit any webform'
+  - 'edit any webform content'
+  - 'edit any webform submission'
+  - 'edit own article content'
+  - 'edit own book content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit own video media'
+  - 'edit own webform'
+  - 'edit own webform content'
+  - 'edit own webform submission'
+  - 'edit terms in tags'
+  - 'edit webform assets'
+  - 'edit webform source'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
+  - 'edit webform twig'
+  - 'edit webform variants'
+  - 'export configuration'
+  - 'import configuration'
+  - 'link to any page'
+  - 'overview messages'
   - 'post comments'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert book revisions'
+  - 'revert page revisions'
+  - 'revert webform revisions'
   - 'search content'
+  - 'select account cancellation method'
   - 'skip comment approval'
+  - 'switch shortcut sets'
+  - 'switch users'
+  - 'synchronize configuration'
+  - 'use admin toolbar search'
+  - 'use advanced search'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
+  - 'use private messaging system'
   - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view any webform submission'
+  - 'view article revisions'
+  - 'view book revisions'
+  - 'view latest version'
   - 'view media'
+  - 'view own unpublished content'
+  - 'view own webform submission'
+  - 'view page revisions'
+  - 'view the administration theme'
+  - 'view user email addresses'
+  - 'view webform revisions'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'

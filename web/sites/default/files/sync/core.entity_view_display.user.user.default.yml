@@ -1,4 +1,4 @@
-uuid: ee3f9ab7-ee91-47c1-bc11-a5d003e30b9b
+uuid: 1d9978ba-4d2d-4d02-8c74-65207a22182f
 langcode: en
 status: true
 dependencies:
@@ -6,52 +6,8 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - field_layout
     - image
-    - layout_builder
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
-  layout_builder:
-    enabled: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          a8167e97-ec7b-4bc7-b65c-b2841b0a2a37:
-            uuid: a8167e97-ec7b-4bc7-b65c-b2841b0a2a37
-            region: content
-            configuration:
-              id: 'field_block:user:user:user_picture'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: image
-                label: hidden
-                settings:
-                  image_link: content
-                  image_style: thumbnail
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          c5e60e18-382e-4b36-9ec8-bcc1b89df107:
-            uuid: c5e60e18-382e-4b36-9ec8-bcc1b89df107
-            region: content
-            configuration:
-              id: 'extra_field_block:user:user:member_for'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 1
-            additional: {  }
-        third_party_settings: {  }
 _core:
   default_config_hash: E1qmUI2SlozLlJ308jfMMFKT67l1p6PywE2LTRbeYS4
 id: user.user.default
@@ -60,8 +16,6 @@ bundle: user
 mode: default
 content:
   member_for:
-    settings: {  }
-    third_party_settings: {  }
     weight: 5
     region: content
   user_picture:
@@ -73,5 +27,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  langcode: true
+hidden: {  }

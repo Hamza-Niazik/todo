@@ -1,0 +1,13 @@
+uuid: ce1de56d-1600-4082-99c4-1cbc7a6df3a7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UNqUQVAJ-Net0gRNU5QRCihmXo0LBCwsw-5J8DaLQpY
+template: example_user_register
+label: 'Example - User register'
+description: 'Working upon creation of a user.'
+text:
+  -
+    value: "<p><a href='[message:user-url]'>@{message:user-name}</a> registered.</p>\r\n"
+settings: {  }

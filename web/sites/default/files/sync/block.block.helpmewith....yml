@@ -1,0 +1,30 @@
+uuid: 9bffecdf-cc27-4192-a594-4318a7b01bf1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4edb7916-89fe-4f7d-875e-cc4f8f775396'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: helpmewith...
+theme: bartik
+region: footer_fifth
+weight: -5
+provider: null
+plugin: 'block_content:4edb7916-89fe-4f7d-875e-cc4f8f775396'
+settings:
+  id: 'block_content:4edb7916-89fe-4f7d-875e-cc4f8f775396'
+  label: 'Help me with...'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

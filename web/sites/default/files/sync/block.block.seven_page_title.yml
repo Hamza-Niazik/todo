@@ -1,4 +1,4 @@
-uuid: 710126c7-8011-4c15-96ba-98395f52959e
+uuid: c7eba07f-06bc-430e-b42a-564e3a2d58ae
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: seven_page_title
 theme: seven
 region: header
-weight: -30
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

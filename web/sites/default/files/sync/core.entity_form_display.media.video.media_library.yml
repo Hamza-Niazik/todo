@@ -1,4 +1,4 @@
-uuid: 22a337cf-7fa3-46ac-857d-35a942441593
+uuid: 428ac78a-9927-4fae-b09c-007c61b07281
 langcode: en
 status: true
 dependencies:
@@ -6,28 +6,13 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.video.field_media_video_file
     - media.type.video
-  module:
-    - field_layout
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 _core:
   default_config_hash: kGv8YsopqHvzTzb7QTINWcv0fnNa5ZDQyZxpOQR2vro
 id: media.video.media_library
 targetEntityType: media
 bundle: video
 mode: media_library
-content:
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
+content: {  }
 hidden:
   created: true
   field_media_video_file: true

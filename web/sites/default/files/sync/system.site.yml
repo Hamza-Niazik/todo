@@ -1,9 +1,9 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
-uuid: ca87504a-fce4-4fd2-85f0-09c13962d1e8
+uuid: 30b8331b-a654-47fb-b955-bd0d2eb5d1e2
 name: Todo
-mail: toad@gmail.com
+mail: workbench@gmail.com
 slogan: ''
 page:
   403: ''
@@ -12,3 +12,4 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
+mail_notification: ''

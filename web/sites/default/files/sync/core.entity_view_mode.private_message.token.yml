@@ -1,0 +1,10 @@
+uuid: e70be8e2-fabb-401f-8db6-9805fc1eb26b
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+id: private_message.token
+label: Token
+targetEntityType: private_message
+cache: true

@@ -1,4 +1,4 @@
-uuid: 201ca759-264f-41e8-b3bb-e18c64855f12
+uuid: dd3854a8-15eb-4bc3-bee0-6e7f399dfca0
 langcode: en
 status: true
 dependencies:
@@ -8,41 +8,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.video
   module:
-    - field_layout
     - image
-    - layout_builder
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
-  layout_builder:
-    enabled: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          23615c12-3711-4c70-b4b4-934406a5d2d3:
-            uuid: 23615c12-3711-4c70-b4b4-934406a5d2d3
-            region: content
-            configuration:
-              id: 'field_block:media:video:thumbnail'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: image
-                label: hidden
-                settings:
-                  image_link: ''
-                  image_style: thumbnail
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
 _core:
   default_config_hash: F66SSIVwOZMKAldnejWuX2lgs7_WAeahriyGgCpPj0Q
 id: media.video.media_library
@@ -62,6 +28,5 @@ content:
 hidden:
   created: true
   field_media_video_file: true
-  langcode: true
   name: true
   uid: true

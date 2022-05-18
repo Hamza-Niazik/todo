@@ -1,4 +1,4 @@
-uuid: 6126025e-384b-42a1-a16a-a528f9a5f054
+uuid: 734198ca-43cf-4257-bdd9-8a3f619bcb95
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,8 @@ dependencies:
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
-    - field_layout
     - file
-    - layout_discovery
     - path
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 _core:
   default_config_hash: 0kIIaDTt6dixXy8TZkat2MNGZJ6vkRG8TaBWTy3E1bM
 id: media.video.default
@@ -34,13 +27,6 @@ content:
     region: content
     settings:
       progress_indicator: throbber
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
     third_party_settings: {  }
   path:
     type: path

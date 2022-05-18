@@ -1,0 +1,23 @@
+uuid: b7b4e893-5e61-48c1-a6ac-79554c819a75
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_subject
+    - field.field.message.example_create_comment.field_comment_reference
+    - field.field.message.example_create_comment.field_node_reference
+    - field.field.message.example_create_comment.field_published
+    - message.template.example_create_comment
+id: message.example_create_comment.mail_subject
+targetEntityType: message
+bundle: example_create_comment
+mode: mail_subject
+content:
+  partial_0:
+    weight: 0
+    region: content
+hidden:
+  field_comment_reference: true
+  field_node_reference: true
+  field_published: true
+  partial_1: true

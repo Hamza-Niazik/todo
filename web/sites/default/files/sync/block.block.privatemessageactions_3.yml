@@ -1,0 +1,25 @@
+uuid: 856e09c9-0cf1-4d5e-9a68-529d83d97fa0
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - system
+  theme:
+    - bartik
+id: privatemessageactions_3
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: private_message_actions_block
+settings:
+  id: private_message_actions_block
+  label: 'Private Message Actions'
+  label_display: visible
+  provider: private_message
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

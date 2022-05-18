@@ -9,5 +9,5 @@ fetch:
   timeout: 30
 notification:
   emails:
-    - toad@gmail.com
+    - workbench@gmail.com
   threshold: all

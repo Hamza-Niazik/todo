@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: _QhkR_LYNacHU4oQybqcZgNge_q1SbQghAjqVBoognE
+delete_on_entity_delete:
+  private_message_thread: private_message_thread
+purge_enable: true
+purge_methods:
+  quota:
+    id: quota
+    data:
+      quota: 1000
+    weight: 0

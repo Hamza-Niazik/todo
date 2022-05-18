@@ -1,4 +1,4 @@
-uuid: f0282e56-81df-4c25-88ad-229cdf8c075a
+uuid: 0983b00f-5f4c-418d-91b6-2ef39f3f5b0b
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,8 @@ dependencies:
     - field.field.node.book.body
     - node.type.book
   module:
-    - field_layout
-    - layout_discovery
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 _core:
   default_config_hash: b_hvlXsOoKPjlyIXXp3Msda_pMWTEC4kFo61--akj0Y
 id: node.book.default
@@ -37,13 +30,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
     third_party_settings: {  }
   path:
     type: path
