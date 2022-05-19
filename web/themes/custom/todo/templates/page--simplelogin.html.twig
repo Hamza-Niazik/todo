@@ -1,0 +1,129 @@
+{#
+/**
+ * @file
+ * Theme "page__simplelogin" template.
+ *
+ * @see simplelogin_preprocess_simplelogin()
+ * @see simplelogin_theme_registry_alter()
+ */
+#}
+{% spaceless %}
+	<div class="simplelogin-wrapper {{ background_class }} {{ background_opacity }}">
+		<div class="simplelogin-header">
+			{{ page.header}}
+		</div>
+		<div class="simplelogin-form" style="width:400px {{ wrapper_width }}px">
+			<div
+				class="simplelogin-bg">
+				{# /** logo coding was here */ #}
+
+				{{ page.highlighted }}
+				{{ page.content }}
+
+				{% if path == '/user/login' %}
+					<div class="buttons-gmas">
+			             <div class="or">
+				  {{ page.page_bottom }}
+							<span>OR</span>
+						</div>
+						<button id="google-auth-button" class="css-1bg609n" type="button" tabindex="0">
+							<span class="css-1ujqpe8"><img src="/{{ directory ~ '/logo-google.svg' }}" width="30" alt=""><meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com"></span>
+							<span class="css-19r5em7">
+								<span {text-align: center;}>Continue with Google</span>
+							</span>
+						</button><br>
+						<button id="microsoft-auth-button" class="css-1bg609n" type="button" tabindex="0">
+							<span class="css-1ujqpe8"><img src="/{{ directory ~ '/micro-logo.svg' }}" width="30" alt=""></span>
+							<span class="css-19r5em7">
+								<span>Continue with Microsoft</span>
+							</span>
+						</button><br>
+						<button id="apple-auth-button" class="css-1bg609n" type="button" tabindex="0">
+							<span class="css-1ujqpe8"><img src="/{{ directory ~ '/apple-logo.svg' }}" width="30" alt=""></span>
+							<span class="css-19r5em7">
+								<span>Continue with Apple</span>
+							</span>
+						</button><br>
+						<button id="slack-auth-button" class="css-1bg609n" type="button" tabindex="0">
+							<span class="css-1ujqpe8"><img src="/{{ directory ~ '/slack-logo.svg' }}" width="30" alt=""></span>
+							<span class="css-19r5em7">
+								<span>Continue with Slack</span>
+							</span>
+						</button>
+					{% elseif path == '/user/register' %}
+						<div class="buttons-gmas-signup">
+						<div class="or">
+				  {{ page.page_bottom }}
+							<span>OR</span>
+						</div>
+							<button id="google-auth-button" class="css-1bg609n" type="button" tabindex="0">
+								<span class="css-1ujqpe8"><img src="/{{ directory ~ '/logo-google.svg' }}" width="30" alt=""><meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com"></span>
+								<span class="css-19r5em7">
+									<span {text-align: center;}>Continue with Google</span>
+								</span>
+							</button><br>
+							<button id="microsoft-auth-button" class="css-1bg609n" type="button" tabindex="0">
+								<span class="css-1ujqpe8"><img src="/{{ directory ~ '/micro-logo.svg' }}" width="30" alt=""></span>
+								<span class="css-19r5em7">
+									<span>Continue with Microsoft</span>
+								</span>
+							</button><br>
+							<button id="apple-auth-button" class="css-1bg609n" type="button" tabindex="0">
+								<span class="css-1ujqpe8"><img src="/{{ directory ~ '/apple-logo.svg' }}" width="30" alt=""></span>
+								<span class="css-19r5em7">
+									<span>Continue with Apple</span>
+								</span>
+							</button><br>
+							<button id="slack-auth-button" class="css-1bg609n" type="button" tabindex="0">
+								<span class="css-1ujqpe8"><img src="/{{ directory ~ '/slack-logo.svg' }}" width="30" alt=""></span>
+								<span class="css-19r5em7">
+									<span>Continue with Slack</span>
+								</span>
+							</button>
+						</div>
+						 {# <div><hr class="hr-line-lines"></div> #}
+					</div>
+				{% endif %}
+				<div class="simplelogin-link">
+				 <div><hr class="hr-line"></div>
+					{% if path == '/user/password' %}
+						<a href="{{ base_path }}user/login" class="signof">{{ "Return to log in"|t }}</a>
+
+					{% elseif path == '/user/register' %}
+						<a href="{{ base_path }}user/login" class="signregister">{{ "Already have an Todo account?Log in"|t }}</a>
+					{% endif %}
+
+					{% if path == '/user/login' %}
+						<div class="forgot-password">
+							<a href="{{ base_path }}user/password" "{{target}}=_blank">{{ "Can't log in?"|t }}</a>
+						</div>
+						<div class="dot">
+							<span>•</span>
+						</div>
+
+						{% if site_register != 'admin_only' %}
+
+							<div class="simple-login-signin">
+								<a href="{{ base_path }}user/register" class="signreg" "{{target}}=_blank">{{ "Sign up for an account"|t }}</a>
+							</div>
+							{# <div class="return-page">
+															<a id="reset-password-email-cancel" href="{{base_path}}user/login?destination=user/=_blank">{{"Return to log in"|t}}</a>
+															</div> #}
+						</div>
+					{% endif %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="simplelogin-footer">
+		{{page.footer_middle}}
+	</div>
+	{# this div is is used inside the wrapper class #}
+	{# <div class="page-bottom">
+				{{page. page_bottom}}
+				<div>By signing up, I accept the Atlassian
+					<a href="https://www.atlassian.com/legal/cloud-terms-of-service" target="_blank" rel="noreferrer noopener" classname="cloud-terms-of-service">Cloud Terms of Service</a>
+					and acknowledge the
+					<a href="https://www.atlassian.com/legal/privacy-policy" target="_blank" rel="noreferrer noopener" classname="privacy-policy">Privacy Policy</a>.</div>
+			</div> #}
+{% endspaceless %}

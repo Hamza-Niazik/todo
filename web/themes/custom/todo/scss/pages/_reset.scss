@@ -1,0 +1,85 @@
+.user-pass {
+  .input {
+    &.success {
+      margin-top: -34px;
+    }
+  }
+  .or {
+    font-size: 17px;
+  }
+  label {
+    &.visually-hidden {
+      color: $light-grey;
+      float: left;
+      font-weight: bold;
+      margin-top: -20px;
+      position: relative !important;
+      overflow: visible;
+      width: auto;
+      height: auto;
+      // .hs-form-required {
+      //     display: none;
+      //  }
+    }
+  }
+  .form-text {
+    margin-top: 0 !important;
+  }
+  .form-required:after {
+    visibility: hidden;
+    background-image: none !important;
+  }
+  .form.user-pass {
+    p {
+      visibility: hidden;
+    }
+  }
+}
+
+form.user-pass {
+  p {
+    visibility: hidden;
+  }
+}
+
+.description {
+  color: $grey !important;
+  cursor: initial;
+  font-size: 12px;
+  font-family: $apple-font;
+  font-style: normal;
+  margin-top: 12px;
+  display: none;
+  .service {
+    color: $dark-blue;
+    overflow: visible;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .private {
+    color: $dark-blue;
+    overflow: visible;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.user-register-form {
+  .description {
+    a {
+      color: $dark-blue;
+    }
+  }
+}
+
+.top-bar-sticky-container {
+  .topbar {
+    ul {
+      background-color: white !important;
+    }
+  }
+}

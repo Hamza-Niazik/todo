@@ -1,0 +1,43 @@
+.login-form {
+    margin-top: 10rem;
+
+    .form-control {
+        width: 50%;
+        border: 1px solid $bs-white-dark;
+    }
+
+    .button {
+        margin-top: 1rem;
+    }
+
+    .btn-info {
+        color: $bs-black;
+        background-color: $bs-blue;
+    }
+
+    .sign-in-text {
+        margin-top: 3rem;
+        cursor: pointer;
+    }
+
+    .center-text {
+        margin-top: 3rem;
+        cursor: pointer;
+
+        span {
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+    }
+
+    .row {
+        img {
+            margin-left: 7rem;
+        }
+    }
+}
+
+.row > * {
+    padding-right: calc(var(--bs-gutter-x) * 0px);
+    padding-left: calc(var(--bs-gutter-x) * 0px);
+}

@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login form</title>
+</head>
+
+<body>
+
+
+    <div class="site-wrapper">
+
+
+
+        <header>
+
+
+
+            <div class="left-sidebar">
+
+
+
+                <div class="l-navbar" id="navbar">
+                    <nav class="nav">
+
+                        <nav class="navbar navbar-expand-sm fixed-top">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#"><img src="img/Capture.png-logo.PNG" alt=""></a>
+
+
+
+
+
+
+                                <nav class="bell-icon">
+
+                                    <div class="icon" id="bell"> <img src="https://i.imgur.com/AC7dgLA.png" alt="">
+                                    </div>
+                                    <div class="notifications" id="box">
+                                        <h2>Notifications - <span>2</span></h2>
+                                        <div class="notifications-item"> <img src="https://i.imgur.com/uIgDDDd.jpg"
+                                                alt="img">
+                                            <div class="text">
+                                                <h4>Samso aliao</h4>
+                                                <p>Samso Nagaro Like your home work</p>
+                                            </div>
+                                        </div>
+                                        <div class="notifications-item"> <img
+                                                src="https://img.icons8.com/flat_round/64/000000/vote-badge.png"
+                                                alt="img">
+                                            <div class="text">
+                                                <h4>John Silvester</h4>
+                                                <p>+20 vista badge earned</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="wrapper">
+                                    <div class="navbar">
+                                        <div class="left">
+
+                                        </div>
+                                        <div class="right">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="img/default-user-removebg-preview.png" alt="Admin"
+                                                            width="30"><i class="fas fa-angle-down"></i>
+                                                    </a>
+
+                                                    <div class="dropdown">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                                                            <li><a href="#"><i class="fas fa-sliders-h"></i>
+                                                                    Settings</a></li>
+                                                            <li><a href="#"><i class="fas fa-sign-out-alt"></i>
+                                                                    Signout</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </nav>
+
+
+
+
+                        <div>
+                            <div class="nav__brand">
+                                <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                            </div>
+                            <div class="nav__list">
+                                <a href="#" class="nav__link active">
+                                    <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                                    <span class="nav__name">Dashboard</span>
+                                </a>
+                                <a href="#" class="nav__link">
+                                    <ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>
+                                    <span class="nav__name">Messenger</span>
+                                </a>
+
+                                <div class="nav__link collapse">
+                                    <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                                    <span class="nav__name">Projects</span>
+
+                                    <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                                    <ul class="collapse__menu">
+                                        <a href="#" class="collapse__sublink">Data</a>
+                                        <a href="#" class="collapse__sublink">Group</a>
+                                        <a href="#" class="collapse__sublink">Members</a>
+                                    </ul>
+                                </div>
+
+                                <a href="#" class="nav__link">
+                                    <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                                    <span class="nav__name">Analytics</span>
+                                </a>
+                                <div class="nav__link collapse">
+                                    <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+                                    <span class="nav__name">Team</span>
+
+                                    <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                                    <ul class="collapse__menu">
+                                        <a href="#" class="collapse__sublink">Data</a>
+                                        <a href="#" class="collapse__sublink">Group</a>
+                                        <a href="#" class="collapse__sublink">Members</a>
+                                    </ul>
+                                </div>
+                                <a href="#" class="nav__link">
+                                    <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                                    <span class="nav__name">Settings</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="nav__link">
+                            <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Log Out</span>
+                        </a>
+                    </nav>
+                </div>
+
+
+            </div>
+            <!--left-sidebar-->
+
+
+
+
+
+
+
+
+
+
+
+        </header>
+
+
+
+
+        <div class="upr-text">
+
+            <h1>Kanban board</h1>
+
+        </div>
+
+
+
+        <form class="example" action="/action_page.php" style="margin-left:16px; max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+
+
+
+        <img src="img/download.png" alt="Avatar" class="avatar">
+        <img src="img/download.png" alt="Avatar" class="avatar">
+        <img src="img/download.png" alt="Avatar" class="avatar">
+        <img src="img/download.png" alt="Avatar" class="avatar">
+        <img src="img/download.png" alt="Avatar" class="avatar">
+        <img src="img/Untitled-1.jpg" alt="Avatar" class="avatar">
+
+
+
+
+
+
+
+        <div class="dropdown-btn">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Priority
+            </a>
+
+            <ul class="dropdown-menu-btn" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+
+
+        <div class="dropdown-btn-two">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Type
+            </a>
+
+            <ul class="dropdown-menu-btn-two" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="banner-ticket">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        Postponed (8)
+                    </div>
+                    <div class="col">
+                        Active (50)
+                    </div>
+                    <div class="col">
+                        Needs Work (50)
+                    </div>
+                    <div class="col">
+                        Needs Reviews (50)
+                    </div>
+                    <div class="col">
+                        Reviewed & Tested (23)
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+
+
+
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="col">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                                <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070"
+                                    stroke-width="1">
+                                    <rect width="333" height="172" stroke="none" />
+                                    <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                                </g>
+                                <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)"
+                                    fill="#100f0f" font-size="22" font-family="Roboto-Regular, Roboto"
+                                    letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Webform Rule</tspan>
+                                </text>
+                                <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                    font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Ticket # 1</tspan>
+                                </text>
+                                <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                    transform="translate(16 128)" fill="#d9d9d9" />
+                                <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Normal</tspan>
+                                </text>
+                                <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                    transform="translate(116 130)" fill="#d9d9d9" />
+                                <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                    transform="translate(197 130)" fill="#d9d9d9" />
+                                <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Bug</tspan>
+                                </text>
+                                <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">2</tspan>
+                                </text>
+                            </svg>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                                <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070"
+                                    stroke-width="1">
+                                    <rect width="333" height="172" stroke="none" />
+                                    <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                                </g>
+                                <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)"
+                                    fill="#100f0f" font-size="22" font-family="Roboto-Regular, Roboto"
+                                    letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Webform Rule</tspan>
+                                </text>
+                                <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                    font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Ticket # 1</tspan>
+                                </text>
+                                <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                    transform="translate(16 128)" fill="#d9d9d9" />
+                                <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Normal</tspan>
+                                </text>
+                                <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                    transform="translate(116 130)" fill="#d9d9d9" />
+                                <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                    transform="translate(197 130)" fill="#d9d9d9" />
+                                <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Bug</tspan>
+                                </text>
+                                <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">2</tspan>
+                                </text>
+                            </svg>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                                <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070"
+                                    stroke-width="1">
+                                    <rect width="333" height="172" stroke="none" />
+                                    <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                                </g>
+                                <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)"
+                                    fill="#100f0f" font-size="22" font-family="Roboto-Regular, Roboto"
+                                    letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Webform Rule</tspan>
+                                </text>
+                                <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                    font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Ticket # 1</tspan>
+                                </text>
+                                <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                    transform="translate(16 128)" fill="#d9d9d9" />
+                                <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Normal</tspan>
+                                </text>
+                                <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                    transform="translate(116 130)" fill="#d9d9d9" />
+                                <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                    transform="translate(197 130)" fill="#d9d9d9" />
+                                <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Bug</tspan>
+                                </text>
+                                <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">2</tspan>
+                                </text>
+                            </svg>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                                <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070"
+                                    stroke-width="1">
+                                    <rect width="333" height="172" stroke="none" />
+                                    <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                                </g>
+                                <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)"
+                                    fill="#100f0f" font-size="22" font-family="Roboto-Regular, Roboto"
+                                    letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Webform Rule</tspan>
+                                </text>
+                                <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                    font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Ticket # 1</tspan>
+                                </text>
+                                <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                    transform="translate(16 128)" fill="#d9d9d9" />
+                                <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Normal</tspan>
+                                </text>
+                                <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                    transform="translate(116 130)" fill="#d9d9d9" />
+                                <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                    transform="translate(197 130)" fill="#d9d9d9" />
+                                <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Bug</tspan>
+                                </text>
+                                <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">2</tspan>
+                                </text>
+                            </svg>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                                <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070"
+                                    stroke-width="1">
+                                    <rect width="333" height="172" stroke="none" />
+                                    <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                                </g>
+                                <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)"
+                                    fill="#100f0f" font-size="22" font-family="Roboto-Regular, Roboto"
+                                    letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Webform Rule</tspan>
+                                </text>
+                                <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                    font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Ticket # 1</tspan>
+                                </text>
+                                <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                    transform="translate(16 128)" fill="#d9d9d9" />
+                                <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Normal</tspan>
+                                </text>
+                                <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                    transform="translate(116 130)" fill="#d9d9d9" />
+                                <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                    transform="translate(197 130)" fill="#d9d9d9" />
+                                <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">Bug</tspan>
+                                </text>
+                                <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                    font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                    <tspan x="0" y="0">2</tspan>
+                                </text>
+                            </svg>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+
+
+
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+
+
+
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="235" height="135" viewBox="0 0 333 172">
+                            <g id="Rectangle_22" data-name="Rectangle 22" fill="none" stroke="#707070" stroke-width="1">
+                                <rect width="333" height="172" stroke="none" />
+                                <rect x="0.5" y="0.5" width="332" height="171" fill="none" />
+                            </g>
+                            <text id="Webform_Rule" data-name="Webform Rule" transform="translate(16 36)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Webform Rule</tspan>
+                            </text>
+                            <text id="Ticket_1" data-name="Ticket # 1" transform="translate(20 69)" fill="#100f0f"
+                                font-size="22" font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Ticket # 1</tspan>
+                            </text>
+                            <rect id="Rectangle_23" data-name="Rectangle 23" width="82" height="36" rx="18"
+                                transform="translate(16 128)" fill="#d9d9d9" />
+                            <text id="Normal" transform="translate(26 152)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Normal</tspan>
+                            </text>
+                            <rect id="Rectangle_25" data-name="Rectangle 25" width="63" height="36" rx="18"
+                                transform="translate(116 130)" fill="#d9d9d9" />
+                            <rect id="Rectangle_26" data-name="Rectangle 26" width="38" height="36" rx="18"
+                                transform="translate(197 130)" fill="#d9d9d9" />
+                            <text id="Bug" transform="translate(131 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">Bug</tspan>
+                            </text>
+                            <text id="_2" data-name="2" transform="translate(211 154)" fill="#100f0f" font-size="18"
+                                font-family="Roboto-Regular, Roboto" letter-spacing="0.05em">
+                                <tspan x="0" y="0">2</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+
+
+
+                <div id="wrapper">
+                    <div class="scrollbar" id="style-default">
+                        <div class="force-overflow"></div>
+                    </div>
+
+
+                    <div class="scrollbar-two">
+                        <div id="wrapper">
+                            <div class="scrollbar" id="style-default">
+                                <div class="force-overflow"></div>
+                            </div>
+                            <!-- </div> -->
+
+                            <div class="scrollbar-three">
+
+                                <div id="wrapper">
+                                    <div class="scrollbar" id="style-default">
+                                        <div class="force-overflow"></div>
+                                    </div>
+                                    <!-- </div> -->
+
+
+
+                                    <div class="scrollbar-four">
+                                        <div id="wrapper">
+                                            <div class="scrollbar" id="style-default">
+                                                <div class="force-overflow"></div>
+                                            </div>
+                                            <!-- </div> -->
+
+
+
+
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                    <!--site_wrapper-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                                <!--site-wrapper-->
+
+
+
+
+
+
+
+
+
+                                <script src="js/jquery-3.6.0.min.js"></script>
+                                <script src="js/script.js"></script>
+                                <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+
+</html>

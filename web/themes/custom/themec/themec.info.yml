@@ -1,0 +1,9 @@
+name: themec
+description: Drupal sass enabling
+type: theme
+core_version_requirement: ^8.8 || ^9
+base theme: stable9
+libraries:
+  - hamza/global-css
+  - hamza/global-js
+

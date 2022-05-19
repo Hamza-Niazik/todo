@@ -1,0 +1,127 @@
+<?php
+
+use \Drupal\Core\Form\FormStateInterface;
+use Drupal\devel\Plugin\Devel\Dumper\Kint;
+
+/**
+ * @file
+ * Add your custom theme override functions here.
+ */
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function todo_preprocess_block(&$variables)
+{
+
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  if ('page_title_block' == $variables['plugin_id']) {
+    switch ($route_name) {
+      case 'user.login':
+        $variables['content']['#title'] = t('Log in to your account');
+        break;
+      case 'user.pass':
+        $variables['content']['#title'] = t('Can\'t log in?');
+        $variables['attributes']['class'][] = 'cannot-log-in-title';
+        // echo '<pre> '.print_r(array_keys($variables), true).'</pre>';
+        break;
+      case 'user.register':
+        $variables['content']['#title'] = t('Sign up for your account');
+        break;
+    }
+  }
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function todo_preprocess_field(&$variables, $hook)
+{
+}
+
+/**
+ * Implements template_preprocess_html().
+ *
+ * Adds additional classes.
+ */
+function todo_preprocess_html(&$variables)
+{
+}
+
+/**
+ * Implements template_preprocess_node.
+ *
+ * Add template suggestions and classes.
+ */
+function todo_preprocess_node(&$variables)
+{
+}
+
+/**
+ * Implements template_preprocess_page.
+ *
+ * Add convenience variables and template suggestions.
+ */
+function todo_preprocess_page(&$variables)
+{
+}
+
+/**
+ * Implements template_preprocess_views_view().
+ */
+function todo_preprocess_views_view(&$variables)
+{
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function todo_form_alter(&$form, &$form_state, $form_id)
+{
+  // print_r($form_id);
+  switch ($form_id) {
+    case 'user_login_form':
+      $form['actions']['submit']['#value'] = ('Log in');
+
+      // For placeholder,
+      $form['name']['#attributes']['placeholder'] = t('Enter email');
+      $form['pass']['#attributes']['placeholder'] =  t('Enter password');
+      // echo '<pre> '.print_r($form, true).'</pre>';
+      break;
+    case 'user_pass':
+      $form['name']['#title'] = t('We\'ll send a recovery link to');
+      $form['actions']['submit']['#value'] = t('Send recovery link');
+      $form['name']['#attributes']['placeholder'] = t('Enter email');
+      // $form['mail']['#prefix']['markup'] = t('');
+      // echo '<pre> '.print_r($form, true).'</pre>';
+      unset($form['mail']);
+      // //
+      break;
+    case 'user_register_form':
+      $form['actions']['submit']['#value'] = t('Sign up');
+      //echo '<pre> '.print_r(array_keys($form), true).'</pre>';
+      $form['account']['mail']['#attributes']['placeholder'] = t('Enter email address');
+      $form['account']['name']['#attributes']['placeholder'] = t('Enter full name');
+      $form['account']['name']['#description'] = t("By signing up, I accept the Atlassian <a href=':url1' target='_blank' class='service' rel='noreferrer noopener' classname='cloud-terms-of-service'> Cloud Terms of Service </a> and acknowledge the <a href=':url1' target='_blank' class='private' rel='noreferrer noopener' classname='privacy-policy'> Privacy Policy </a>", [':url' => 'https://www.atlassian.com/legal/cloud-terms-of-service', ':url1' => 'https://www.atlassian.com/legal/privacy-policy']);
+        // echo '<pre> '.print_r($form('search_block_form'), true).'</pre>';
+      //  echo '<pre> '.print_r($form['account'], true).'</pre>';
+      break;
+      case 'search_block_form':
+        $form['keys']['#attributes']['placeholder'] = t('Enter email');
+        // echo '<pre> '.print_r(array_keys($form), true).'</pre>';
+        break;
+      }
+}
+
+/**
+ * Implements template_preprocess_form_element().
+ */
+function todo_preprocess_form_element() {
+
+}
+
+
+// function todo_preprocess(&$variables, $hook) {
+//   $variables['base_path'] = base_path();
+// }

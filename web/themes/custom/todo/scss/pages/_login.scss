@@ -1,0 +1,303 @@
+body {
+  &.simplelogin {
+    background-image: url(../images/todo/default_left.e74de3ec.svg), url(../images/todo/default_right.6ece9751.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 368px, 368px;
+    background-position: left bottom, right bottom;
+    min-height: inherit;
+    @include breakpoint(small only) {
+      background: none;
+      border: none;
+      padding: 0px 8px;
+    }
+    .simplelogin-wrapper {
+      padding: 40px 0px 40px 0px;
+      text-align: center;
+      margin: 0;
+      @include breakpoint(small) {
+        border: none;
+      }
+      .hr-line {
+        margin-top: -4px;
+      }
+      // .nor {
+      //     color: $gray;
+      //     font-size: 11px;
+      //     line-height: 1;
+      //     margin-bottom: 16px;
+      //     text-align: center;
+      //     text-transform: uppercase;
+      // }
+      .form-email {
+        background-color: $transparent;
+        border-color: $light-white;
+        border-width: 2px;
+        font-family: $apple-font;
+        &:hover {
+          background-color: $whitesmoke;
+          border-color: $light-blue;
+        }
+        &:focus {
+          border-color: $light-blue;
+        }
+        @include breakpoint(small down) {
+          font-size: large;
+          padding: 0 5px;
+          margin-top: 10px;
+        }
+      }
+      .username {
+        background-color: $transparent;
+        border-color: $light-white;
+        border-width: 2px;
+        font-family: $apple-font;
+        -webkit-box-pack: justify;
+        max-width: 100%;
+        &:hover {
+          background-color: $whitesmoke;
+          border-color: $light-blue;
+        }
+        &:focus {
+          border-color: $light-blue;
+        }
+        @include breakpoint(small down) {
+          font-size: large;
+          padding: 5px 5px 5px 5px;
+          margin-top: 10px;
+        }
+      }
+      .form-text {
+        background-color: $transparent;
+        border-color: $light-white;
+        border-width: 2px;
+        font-family: $apple-font;
+        -webkit-box-pack: justify;
+        max-width: 100%;
+        &:focus {
+          border-color: $light-blue;
+        }
+        &:hover {
+          background-color: $whitesmoke;
+        }
+        @include breakpoint(small down) {
+          padding: 5px 5px 5px 5px;
+          margin-top: 10px;
+          font-size: large;
+        }
+      }
+      .success {
+        -webkit-box-pack: center;
+        justify-content: center;
+        display: flex !important;
+        background-color: $blue;
+        padding: 13px;
+        color: $white;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: revert;
+        cursor: pointer;
+        text-transform: unset;
+        margin-bottom: 30px;
+        margin-top: 25px;
+      }
+      .buttons-gmas {
+        .or {
+          color: $gray;
+          font-size: 11px;
+          line-height: 1;
+          margin-bottom: 14px;
+          margin-top: -10px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .css-1bg609n {
+          margin-bottom: 16px;
+          font-weight: bold;
+          transition: opacity 0.3s ease 0s;
+          color: $astronaut;
+          align-items: baseline;
+          box-shadow: $dark-black; //1px 1px 5px 0px,  #00000033 !important;
+          border-width: 0px;
+          margin-right: 10px;
+          width: 100%;
+          line-height: 30px;
+          margin: 0 0 15px 0;
+          padding: 5px 10px;
+          cursor: pointer;
+          .css-1ujqpe8 {
+            float: left;
+          }
+          &:hover {
+            background: $black;
+          }
+          img {
+            height: 18px;
+            width: 18px;
+          }
+        }
+      }
+      .buttons-gmas-signup {
+        margin-bottom: -16px;
+        .or {
+          color: $gray;
+          font-size: 11px;
+          line-height: 1;
+          margin-bottom: 14px;
+          margin-top: -10px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .css-1bg609n {
+          margin-bottom: 16px;
+          font-weight: bold;
+          transition: opacity 0.3s ease 0s;
+          color: $astronaut;
+          align-items: baseline;
+          box-shadow: $dark-black; //1px 1px 5px 0px,  #00000033 !important;
+          border-width: 0px;
+          margin-right: 10px;
+          width: 100%;
+          line-height: 30px;
+          margin: 0 0 15px 0;
+          padding: 5px 10px;
+          cursor: pointer;
+          .css-1ujqpe8 {
+            float: left;
+          }
+          &:hover {
+            background: $black;
+          }
+          img {
+            height: 18px;
+            width: 18px;
+          }
+        }
+      }
+      .simplelogin-form {
+        .simplelogin-bg {
+          .cannot-log-in-title {
+            h1 {
+              font-weight: normal !important;
+            }
+          }
+        }
+        max-width: 400px;
+        padding: 4px 40px;
+        @include breakpoint(small only) {
+          box-shadow: none;
+        }
+      }
+    }
+    .dot {
+      a {
+        color: $light-grey;
+        padding-left: 120px;
+        position: relative;
+        bottom: 20px;
+        cursor: auto;
+      }
+    }
+    .logout-logo {
+      svg {
+        color: $light-blue;
+        fill: $dark-blue;
+        display: inline-block;
+        height: 40px;
+        position: relative;
+      }
+      @include breakpoint(small only) {}
+    }
+    .simplelogin-bg {
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+    .field-item {
+      padding: 0px 0px 38px;
+    }
+    .block {
+      h1 {
+        font-size: 16px !important;
+        color: $grey;
+        margin-bottom: 16px;
+        padding: 11px;
+        font-family: $apple-font;
+        margin-bottom: -11px;
+        font-weight: bold;
+      }
+    }
+    .ham {
+      margin-bottom: 22px;
+    }
+    .simplelogin-link {
+      margin-top: 15px;
+      text-align: center;
+      .signregister {
+        border: none;
+        color: $blue;
+        float: left;
+        margin-top: -17px !important;
+        padding-left: 41px;
+        text-transform: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .signof {
+        border: none;
+        color: $blue;
+        text-transform: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .forgot-password {
+        margin-top: 0;
+        float: left;
+        color: $blue;
+        font-size: 14px;
+        padding-right: 0;
+        padding-left: 24px;
+        a {
+          color: $blue;
+          border: none;
+          text-transform: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .dot {
+        float: left;
+        cursor: initial;
+      }
+      .simple-login-signin {
+        float: left;
+        .signreg {
+          border: none;
+          color: $blue;
+          font-size: 14px;
+          float: right;
+          padding-top: 0;
+          padding-right: 0;
+          text-transform: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .simplelogin-footer {
+      .logo-footer {
+        color: $grey;
+        fill: $grey;
+        position: relative;
+        user-select: none;
+        margin-left: 16px;
+        path {
+          fill: $grey !important;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/todo.css: {}
+  js:
+    js/todo.js: {}
