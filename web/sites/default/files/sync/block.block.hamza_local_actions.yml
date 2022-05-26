@@ -1,0 +1,20 @@
+uuid: 5379298f-a00d-4518-9479-c3203ad652b7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hamza
+_core:
+  default_config_hash: gv5JXTvQXjlMY6PXrfxzcLMjMg4074WiEQCy7ZSMvK4
+id: hamza_local_actions
+theme: hamza
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

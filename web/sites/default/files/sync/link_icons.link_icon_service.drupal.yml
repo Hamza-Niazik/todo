@@ -1,0 +1,17 @@
+uuid: bd1ef011-9785-482b-82c0-b7febee2fe67
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jiC43Do1tycRtGUKzdsO8U75t3OFWELm2olCERY_WKg
+id: drupal
+label: Drupal
+hostnames:
+  - drupal.org
+  - drupalcode.org
+class: null
+icon: drupal
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#0073BA'

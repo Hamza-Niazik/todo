@@ -1,0 +1,16 @@
+uuid: 69f33f4f-12a1-44a3-9435-aae7a2bc22fd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RZwwjwGgLIhksuu1NLdsHxqRr6vcRAhUoZBA5Yp979A
+id: github
+label: GitHub
+hostnames:
+  - github.com
+class: null
+icon: github
+icon_style: brand
+icon_square: github-square
+icon_circle: null
+color: black

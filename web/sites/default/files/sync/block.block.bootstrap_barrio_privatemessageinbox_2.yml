@@ -1,0 +1,28 @@
+uuid: 1e0dcf1b-98ec-4b88-bbcf-27084a83f2de
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_privatemessageinbox_2
+theme: bootstrap_barrio
+region: content
+weight: -1
+provider: null
+plugin: private_message_inbox_block
+settings:
+  id: private_message_inbox_block
+  label: 'Private Message Inbox'
+  label_display: '0'
+  provider: private_message
+  thread_count: 5
+  ajax_load_count: 5
+  ajax_refresh_rate: 15
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

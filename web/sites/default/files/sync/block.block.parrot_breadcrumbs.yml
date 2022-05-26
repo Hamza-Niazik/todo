@@ -1,0 +1,22 @@
+uuid: e8c57c73-1d11-49b8-9ad0-2aff32b735af
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - parrot
+_core:
+  default_config_hash: 2rIN97Rd7-rjv3P4h0-xrZnAgPJHyXFEwrB--sS2_qE
+id: parrot_breadcrumbs
+theme: parrot
+region: content
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

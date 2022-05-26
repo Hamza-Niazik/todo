@@ -1,0 +1,20 @@
+uuid: 6550e94f-00ed-4265-a53b-3ff7ce3707ce
+langcode: en
+status: true
+dependencies:
+  theme:
+    - parrot
+_core:
+  default_config_hash: gv5JXTvQXjlMY6PXrfxzcLMjMg4074WiEQCy7ZSMvK4
+id: parrot_local_actions
+theme: parrot
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

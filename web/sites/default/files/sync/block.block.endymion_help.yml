@@ -1,0 +1,22 @@
+uuid: f001158d-1709-4bd8-9cbb-fb9a5a5755ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - endymion
+_core:
+  default_config_hash: bYvyEzJ7UcmjXZAYLxb4Qb_J77K9bPbk4ealdap31FY
+id: endymion_help
+theme: endymion
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

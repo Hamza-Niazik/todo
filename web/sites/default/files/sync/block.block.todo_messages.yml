@@ -1,0 +1,20 @@
+uuid: fb6a9f5b-3df2-4d34-b067-3e1c6055ce0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - todo
+id: todo_messages
+theme: todo
+region: content
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: visible
+  provider: system
+visibility: {  }

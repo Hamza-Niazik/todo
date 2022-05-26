@@ -1,0 +1,22 @@
+uuid: 6b75b18c-b60b-4dc0-a3c3-03f829aeac3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ptoweb_theme
+_core:
+  default_config_hash: 6_eJxtyfANKFE_nfriHKgrARRIPHH88sI6jvQ4EHbBc
+id: ptoweb_theme_content
+theme: ptoweb_theme
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 9cc8d779-dfdb-443b-a268-d6e9c254a60a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - endymion
+_core:
+  default_config_hash: 6_eJxtyfANKFE_nfriHKgrARRIPHH88sI6jvQ4EHbBc
+id: endymion_content
+theme: endymion
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

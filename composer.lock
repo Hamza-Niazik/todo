@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9d68b590c5a68fe0447369f7eca41c5",
+    "content-hash": "65f20052c4d7863b757b27806f653758",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2824,6 +2824,60 @@
             }
         },
         {
+            "name": "drupal/fontawesome",
+            "version": "2.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fontawesome.git",
+                "reference": "8.x-2.23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fontawesome-8.x-2.23.zip",
+                "reference": "8.x-2.23",
+                "shasum": "3e9292cd4b0d167d5b57376d5a23c402570e3d5e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.23",
+                    "datestamp": "1650642403",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel.Moberly",
+                    "homepage": "https://www.drupal.org/user/1160788"
+                },
+                {
+                    "name": "truls1502",
+                    "homepage": "https://www.drupal.org/user/325866"
+                }
+            ],
+            "description": "The web's most popular icon set and toolkit.",
+            "homepage": "https://www.drupal.org/project/fontawesome",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fontawesome",
+                "issues": "https://drupal.org/project/issues/fontawesome"
+            }
+        },
+        {
             "name": "drupal/inline_entity_form",
             "version": "1.0.0-rc11",
             "source": {
@@ -3041,6 +3095,104 @@
                 "source": "http://cgit.drupalcode.org/libraries",
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/link_icons",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/link_icons.git",
+                "reference": "3.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/link_icons-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "c22412e66e8614201bcb9ebe8a3399a35c5ed2d0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/fontawesome": "^2.0",
+                "drupal/link": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.3",
+                    "datestamp": "1610516182",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Nattriss",
+                    "homepage": "https://www.drupal.org/user/378513",
+                    "email": "dave@natts.com"
+                }
+            ],
+            "description": "Field formatter for Link field to render a Font Awesome icon for the service being linked to (ex. Facebook, Twitter or LinkedIn), with various display options",
+            "homepage": "https://drupal.org/project/link_icons",
+            "support": {
+                "source": "https://git.drupalcode.org/project/link_icons",
+                "issues": "https://drupal.org/project/issues/link_icons"
+            }
+        },
+        {
+            "name": "drupal/linkicon",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/linkicon.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/linkicon-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "7457aef8b72f87e392c2c296fef4da8f6b168f4d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1640322060",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/u/gausarts",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Committers for linkicon",
+                    "homepage": "https://www.drupal.org/node/2208459/committers"
+                }
+            ],
+            "description": "A link field formatter to create icon classes based on predefined titles.",
+            "homepage": "https://www.drupal.org/project/linkicon",
+            "support": {
+                "source": "http://cgit.drupalcode.org/linkicon",
+                "issues": "https://www.drupal.org/project/issues/linkicon"
             }
         },
         {
@@ -4035,6 +4187,72 @@
             "homepage": "https://www.drupal.org/project/wp_migrate",
             "support": {
                 "source": "https://git.drupalcode.org/project/wp_migrate"
+            }
+        },
+        {
+            "name": "drupal/zurb_foundation",
+            "version": "6.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/zurb-foundation.git",
+                "reference": "8.x-6.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/zurb_foundation-8.x-6.0-alpha6.zip",
+                "reference": "8.x-6.0-alpha6",
+                "shasum": "9a7f023056cffe61f867854adb106d8978ff551a"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-6.0-alpha6",
+                    "datestamp": "1591824433",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Samuel Mortensen (samuelmortenson)",
+                    "homepage": "https://www.drupal.org/u/samuelmortenson",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "asrob",
+                    "homepage": "https://www.drupal.org/user/105777"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                },
+                {
+                    "name": "sim_1",
+                    "homepage": "https://www.drupal.org/user/3515959"
+                }
+            ],
+            "description": "Base Drupal theme based on Zurb Foundation 6.x.",
+            "homepage": "http://drupal.org/project/zurb_foundation",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/zurb_foundation",
+                "issues": "http://drupal.org/project/issues/zurb_foundation"
             }
         },
         {
@@ -8776,7 +8994,8 @@
         "drupal/outdatedbrowser": 10,
         "drupal/private_message": 10,
         "drupal/static_suite": 15,
-        "drupal/webform": 10
+        "drupal/webform": 10,
+        "drupal/zurb_foundation": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

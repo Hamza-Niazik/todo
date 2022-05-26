@@ -1,0 +1,16 @@
+uuid: e7ff0d68-8a46-48ab-ab34-5c899521e113
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Ob8PaBnBNh23MSstf6y7y5MNAIXqIYK2oGGpI6uXYZA
+id: angellist
+label: AngelList
+hostnames:
+  - angel.co
+class: null
+icon: angellist
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

@@ -1,0 +1,28 @@
+uuid: 4d5ff127-ef64-4f3c-9699-6493f06e247c
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - system
+  theme:
+    - parrot
+id: parrot_privatemessageinbox_2
+theme: parrot
+region: content
+weight: -1
+provider: null
+plugin: private_message_inbox_block
+settings:
+  id: private_message_inbox_block
+  label: 'Private Message Inbox'
+  label_display: '0'
+  provider: private_message
+  thread_count: 5
+  ajax_load_count: 5
+  ajax_refresh_rate: 15
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,16 @@
+uuid: 455f2e43-8c82-47d5-b25a-1a61bb9354db
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wgl6-ELDWe8GvFThqAiFxDdLnzRbeBtXrDQnSxO-Ehg
+id: deviantart
+label: DeviantArt
+hostnames:
+  - deviantart.com
+class: null
+icon: deviantart
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#CFDD20'

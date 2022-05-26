@@ -1,0 +1,16 @@
+uuid: 82c2b7e8-cc01-4d1a-8e58-208d661af638
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6pCVX02FOiuMS584kWsAXrqP-_PGvCIVZ9-rZ6fVh3I
+id: bandcamp
+label: Bandcamp
+hostnames:
+  - bandcamp.com
+class: null
+icon: bandcamp
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#639AA9'

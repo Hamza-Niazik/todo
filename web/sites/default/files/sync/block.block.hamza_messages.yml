@@ -1,0 +1,20 @@
+uuid: eeb7f0ce-1609-44e9-bad6-e4de7b215988
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hamza
+id: hamza_messages
+theme: hamza
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: visible
+  provider: system
+visibility: {  }

@@ -1,0 +1,16 @@
+uuid: da9c5fb4-8936-4543-87bf-d2a77a2df12d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JYecAQl5ubcl2_-vacTOpbRIM_mvgKrQE1Zz_TPRplo
+id: dropbox
+label: Dropbox
+hostnames:
+  - dropbox.com
+class: null
+icon: dropbox
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#1182DE'

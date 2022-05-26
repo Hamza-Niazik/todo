@@ -1,0 +1,16 @@
+uuid: 95e5530b-c0d0-432c-b44e-34f7eed34343
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tlrqHMuOHg4Cqx6GaEwsvi19hn2onEdWz0Up0cZHX78
+id: periscope
+label: Periscope
+hostnames:
+  - pscp.tv
+class: null
+icon: periscope
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#3E9FBE'

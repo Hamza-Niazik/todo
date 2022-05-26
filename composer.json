@@ -45,6 +45,8 @@
     "drupal/inline_entity_form": "^1.0@RC",
     "drupal/jsonapi_extras": "^3.19",
     "drupal/libraries": "^3.0@beta",
+    "drupal/link_icons": "^3.0",
+    "drupal/linkicon": "^1.7",
     "drupal/module_filter": "^3.2",
     "drupal/nodeviewcount": "^1.0@alpha",
     "drupal/outdatedbrowser": "^1.0@beta",
@@ -58,6 +60,7 @@
     "drupal/token": "^1.10",
     "drupal/webform": "^6.2@beta",
     "drupal/wp_migrate": "^3.0",
+    "drupal/zurb_foundation": "^6.0@alpha",
     "drush/drush": "^10.6"
   },
   "conflict": {

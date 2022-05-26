@@ -1,0 +1,16 @@
+uuid: 1002c4da-725d-4e40-a407-a99c6c997ad6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JQMFtmX3qe_YB1rZmxOmeH4TWOBlSaCC6QMhqYh8-S0
+id: grav
+label: Grav
+hostnames:
+  - getgrav.org
+class: null
+icon: grav
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

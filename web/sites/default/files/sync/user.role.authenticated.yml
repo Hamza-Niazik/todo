@@ -32,6 +32,7 @@ dependencies:
     - field_ui
     - file
     - filter
+    - fontawesome
     - image
     - media
     - message
@@ -68,6 +69,7 @@ permissions:
   - 'access contextual links'
   - 'access devel information'
   - 'access files overview'
+  - 'access fontawesome additional settings'
   - 'access media overview'
   - 'access media_entity_browser entity browser pages'
   - 'access media_entity_browser_media_library entity browser pages'

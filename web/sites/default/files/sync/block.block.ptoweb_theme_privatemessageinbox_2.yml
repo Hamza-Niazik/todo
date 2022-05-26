@@ -1,0 +1,28 @@
+uuid: 37acb7da-bc83-42fc-9931-aa19e8a9f533
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - system
+  theme:
+    - ptoweb_theme
+id: ptoweb_theme_privatemessageinbox_2
+theme: ptoweb_theme
+region: content
+weight: -1
+provider: null
+plugin: private_message_inbox_block
+settings:
+  id: private_message_inbox_block
+  label: 'Private Message Inbox'
+  label_display: '0'
+  provider: private_message
+  thread_count: 5
+  ajax_load_count: 5
+  ajax_refresh_rate: 15
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

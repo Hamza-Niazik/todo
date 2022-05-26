@@ -1,0 +1,20 @@
+uuid: 3044268e-b309-4310-a1c2-981983a3fda9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - parrot
+id: parrot_messages
+theme: parrot
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: visible
+  provider: system
+visibility: {  }

@@ -1,0 +1,16 @@
+uuid: 81cafb4c-0efb-4af9-a1c7-6de69a349e44
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tYOGtZ-NZux-0p3ww-HbqwmPTmOYJw1ytcZQB7Bo7bM
+id: telegram
+label: Telegram
+hostnames:
+  - telegram.org
+class: null
+icon: telegram-plane
+icon_style: brand
+icon_square: null
+icon_circle: telegram
+color: '#179CDE'

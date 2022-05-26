@@ -1,0 +1,16 @@
+uuid: 775f1ed9-dabc-48b8-871b-c2caa9f33ab4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: oEj-SJx5eX1GgAARiYEbKWJRefdVfPp_jIBpbdvzP0c
+id: kickstarter
+label: Kickstarter
+hostnames:
+  - kickstarter.com
+class: null
+icon: kickstarter-k
+icon_style: brand
+icon_square: kickstarter
+icon_circle: null
+color: '#05CE78'

@@ -1,0 +1,16 @@
+uuid: 38802a98-2204-448b-9f92-9659e0ad42ee
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2SecW7U8eADQCKW4KrH9Xo7vNW_cCvM5QqDh1XRBn3g
+id: flickr
+label: Flickr
+hostnames:
+  - flickr.com
+class: null
+icon: flickr
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: null

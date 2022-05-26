@@ -1,0 +1,28 @@
+uuid: 2796e061-1e82-43c1-a8c6-1c2491703443
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - system
+  theme:
+    - hamza
+id: hamza_privatemessageinbox_2
+theme: hamza
+region: content
+weight: -1
+provider: null
+plugin: private_message_inbox_block
+settings:
+  id: private_message_inbox_block
+  label: 'Private Message Inbox'
+  label_display: '0'
+  provider: private_message
+  thread_count: 5
+  ajax_load_count: 5
+  ajax_refresh_rate: 15
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

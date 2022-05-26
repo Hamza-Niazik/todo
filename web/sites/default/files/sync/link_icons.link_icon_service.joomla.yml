@@ -1,0 +1,16 @@
+uuid: 9cc136ef-30b6-4057-9220-2aeb676dce09
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: v-egsaNveqMm3F6iMnCu63kmYIBGr-ZmTegKKQLY-VY
+id: joomla
+label: Joomla
+hostnames:
+  - joomla.org
+class: null
+icon: joomla
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#1B63A2'

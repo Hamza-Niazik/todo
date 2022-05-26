@@ -1,0 +1,22 @@
+uuid: 30a146b6-6b03-45e6-a34b-4aef968e6b01
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ptoweb_theme
+_core:
+  default_config_hash: bYvyEzJ7UcmjXZAYLxb4Qb_J77K9bPbk4ealdap31FY
+id: ptoweb_theme_help
+theme: ptoweb_theme
+region: header_highlighted
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

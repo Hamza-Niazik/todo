@@ -1,0 +1,16 @@
+uuid: 2087e520-cfeb-435d-b365-99b5ecc92243
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RYmPAxstpuYoyvT-Q_oy8OYEhJEuICgjbpaTB-PXU1A
+id: jsfiddle
+label: JSFiddle
+hostnames:
+  - jsfiddle.net
+class: null
+icon: jsfiddle
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#4679BD'

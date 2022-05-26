@@ -1,0 +1,20 @@
+uuid: 546b1a56-1b61-4807-aca5-ea63e06c998d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - todo
+_core:
+  default_config_hash: gv5JXTvQXjlMY6PXrfxzcLMjMg4074WiEQCy7ZSMvK4
+id: todo_local_actions
+theme: todo
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

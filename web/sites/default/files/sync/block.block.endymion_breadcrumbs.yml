@@ -1,0 +1,22 @@
+uuid: c7821947-9b25-4fdd-89dc-ed5229622e9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - endymion
+_core:
+  default_config_hash: 2rIN97Rd7-rjv3P4h0-xrZnAgPJHyXFEwrB--sS2_qE
+id: endymion_breadcrumbs
+theme: endymion
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

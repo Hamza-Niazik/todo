@@ -1,0 +1,20 @@
+uuid: 7ac36e9a-0088-4409-8517-15e9ccbdf7d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ptoweb_theme
+id: ptoweb_theme_messages
+theme: ptoweb_theme
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: visible
+  provider: system
+visibility: {  }

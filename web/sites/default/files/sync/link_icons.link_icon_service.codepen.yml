@@ -1,0 +1,16 @@
+uuid: 20fa0007-f5e0-47f7-afd1-0d372e0dd6bd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AHCC86eKE8WSDl9GveWG8TDOeWRe4QbSU_gGXotbXeE
+id: codepen
+label: Codepen
+hostnames:
+  - codepen.io
+class: null
+icon: codepen
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

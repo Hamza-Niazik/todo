@@ -1,0 +1,22 @@
+uuid: f97b256b-5266-42d2-b901-810415dc2b97
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - parrot
+_core:
+  default_config_hash: 6_eJxtyfANKFE_nfriHKgrARRIPHH88sI6jvQ4EHbBc
+id: parrot_content
+theme: parrot
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

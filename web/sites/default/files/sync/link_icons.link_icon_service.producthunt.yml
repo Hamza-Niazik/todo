@@ -1,0 +1,16 @@
+uuid: c0556cca-9a8d-488b-995d-959960ae81ab
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ACtBycIT-k3zpmL1Bkpri4heXRERlceoBjb0MaRC_Vs
+id: producthunt
+label: 'Product Hunt'
+hostnames:
+  - producthunt.com
+class: product-hunt
+icon: product-hunt
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#DA552F'

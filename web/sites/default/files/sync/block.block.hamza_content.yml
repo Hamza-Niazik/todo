@@ -1,0 +1,22 @@
+uuid: 8bee494b-c90d-47e7-8310-c6d67cef662a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hamza
+_core:
+  default_config_hash: 6_eJxtyfANKFE_nfriHKgrARRIPHH88sI6jvQ4EHbBc
+id: hamza_content
+theme: hamza
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

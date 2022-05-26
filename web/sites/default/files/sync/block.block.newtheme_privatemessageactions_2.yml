@@ -1,0 +1,34 @@
+uuid: d56a858c-09cf-4731-9ca2-c6b8334ef9d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - private_message
+    - system
+    - user
+  theme:
+    - newtheme
+id: newtheme_privatemessageactions_2
+theme: newtheme
+region: content
+weight: 0
+provider: null
+plugin: private_message_actions_block
+settings:
+  id: private_message_actions_block
+  label: 'Private Message Actions'
+  label_display: '0'
+  provider: private_message
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
